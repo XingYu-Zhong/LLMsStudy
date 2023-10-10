@@ -118,8 +118,7 @@ OpenCompass是一个开源平台，专为大语言模型和多模态模型设计
 
 ### LLM压缩
 
-#### [LLM量化](https://github.com/liguodongiot/llm-action/tree/main/model-compression/quantization)
-
+#### LLM量化
 
 训练后量化：
 
@@ -131,7 +130,6 @@ OpenCompass是一个开源平台，专为大语言模型和多模态模型设计
 
 量化感知训练：
 
-- [大模型量化感知训练开山之作：LLM-QAT](https://zhuanlan.zhihu.com/p/647589650)
 
 量化感知微调：
 
@@ -155,7 +153,7 @@ OpenCompass是一个开源平台，专为大语言模型和多模态模型设计
 
 #### LLM知识蒸馏
 
-- [大模型知识蒸馏概述]()
+- 大模型知识蒸馏概述
 
 **Standard KD**:
 
