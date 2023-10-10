@@ -22,11 +22,15 @@
 
 ### Transformer结构
 
+![image-20231010150630814](https://picgo-zxy.oss-cn-guangzhou.aliyuncs.com/typoreimgs/image-20231010150630814.png)
+
 Transformer是由Google Brain在2017年提出的一种新颖的网络结构。相对于RNN，它针对其效率问题和长程依赖传递的挑战进行了创新设计，并在多个任务上均展现出优越的性能。
 
 如下图所示的是Transformer的架构细节。其核心技术是自注意力机制（Self-Attention）。简单地说，自注意力机制允许一个句子中的每个词对句子中的所有其他词进行加权，以生成一个新的词向量表示。这个过程可以看作是每个词都经过了一次类似卷积或聚合的操作。这种机制提高了模型对于上下文信息的捕获能力。
 
 ### MOE结构
+
+![image-20231010150553380](https://picgo-zxy.oss-cn-guangzhou.aliyuncs.com/typoreimgs/image-20231010150553380.png)
 
 模型的增大和训练样本的增加导致了计算成本的显著增长。而这种计算上的挑战促使了技术的进步与创新。
 
@@ -39,8 +43,6 @@ Transformer是由Google Brain在2017年提出的一种新颖的网络结构。�
 实际上，稀疏门控 MoE 使得模型容量得到了1000倍以上的增强，但在现代GPU集群上的计算效率损失却非常有限。
 
 总之，如果说Transformer架构是模型参数量的第一次重大突破，达到了亿级，那么MoE稀疏混合专家结构则进一步推动了这一突破，使参数量达到了千亿乃至万亿的规模。
-
-
 
 ![llm_survey](https://picgo-zxy.oss-cn-guangzhou.aliyuncs.com/typoreimgs/llm_survey.gif)
 
