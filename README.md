@@ -113,7 +113,7 @@ OpenCompass是一个开源平台，专为大语言模型和多模态模型设计
 
 
 ## 没有卡的条件下我们能做什么？
-
+微调和数据增强
 
 
 ### LLM压缩
@@ -208,6 +208,8 @@ https://zhuanlan.zhihu.com/p/646831196
 
 吴恩达大模型系列课程
 
+https://github.com/datawhalechina/prompt-engineering-for-developers
+
 包括 提示词工程，langchain
 
 学习后可以入门大模型的基本概念和应用
@@ -217,6 +219,7 @@ https://zhuanlan.zhihu.com/p/646831196
 
 在了解大模型的基本概念后，可以通过查阅论文来了解大模型的最新进展
 
+https://github.com/Hannibal046/Awesome-LLM
 
 ### 3. 代码实践（进阶）
 
