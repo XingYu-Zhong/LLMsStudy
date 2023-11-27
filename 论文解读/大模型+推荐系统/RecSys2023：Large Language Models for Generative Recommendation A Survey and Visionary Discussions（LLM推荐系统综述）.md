@@ -14,7 +14,7 @@
 
 作者认为llm推荐可以作为端到端的生成，一步到位，直接吧推荐列表生成出来。
 
-![](..\pic\rs_vs_llmrs.png)
+![](https://raw.githubusercontent.com/XingYu-Zhong/LLMsStudy/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/rs_vs_llmrs.png)
 
 之前推荐系统的流程一般在工业上是先通过简单的模型进行召回，排序，后面缩小范围后才用较为复杂的模型进行精排，所以工业上和学术上差距比较大，主要原因是因为学术没有考虑那么全面落地成本。而大模型做推荐系统在工业上和学术上差距就没有那么大
 
