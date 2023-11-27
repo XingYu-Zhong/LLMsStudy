@@ -16,14 +16,17 @@
 
 作者提出Reflexion框架，包含四个组成部分：
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Reflexion%E6%A1%86%E6%9E%B6.png)
 
 Actor: 基于当前环境生成下一步的动作。
+
 Evaluator: 衡量Actor生成结果的质量。就像强化学习中的Reward函数对Actor的执行结果进行打分。
+
 Self-reflexion：Reflexion框架中最重要的部分。它能结合离散的reward信号(如success/fail)、trajectory等生成具体且详细语言反馈信号，这种反馈信号会储存在Memory中，启发下一次实验的Actor执行动作。
+
 Memory：分为短期记忆(short-term)和长期记忆(long-term)。在一次实验中的上下文称为短期记忆，多次试验中Self-reflexion的结果称为长期记忆。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Reflexion%E8%BF%87%E7%A8%8B.png)
 
 执行过程：如上图伪代码所示，Reflexion是一个迭代过程，Actor产生行动，Evaluator对Actor的行动做出评价，Self-Rflexion基于行动和评价形成反思，并将反思结果存储到长期记忆中，直到Actor执行的结果达到目标效果。
 
