@@ -16,7 +16,7 @@
 
 2.推理：在获取了关于高层次概念或原则的信息后，LLM 可以基于这些信息对原始问题进行推理。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/STP.png)
 
 后退策略可能会让LLM尝试识别问题的范围和上下文，有的问题后退的多一点，有的少一些。
 
@@ -24,7 +24,7 @@
 
 作者用 PaLM-2L 和 GPT-4 模型做了实验，发现这种 Prompt 技巧对推理任务（STEM、知识问答、多步推理）的性能表现提升显著（高达27%）。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/STP_result.png)
 
 评估：采用了一种基于 PaLM-2L 模型的评估方法，通过 few-shot 学习来判断模型的答案是否与目标答案等价。
 
