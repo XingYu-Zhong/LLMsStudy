@@ -12,7 +12,7 @@ GitHub：https://github.com/Paitesanshi/LLM-Agent-Survey
 
 目前已经有不少使用LLM作为Agent的研究并且都有一定的效果，但这些研究大都是独立提出，目前对他们的整体总结比较少，因此作者对这一领域的一些前沿研究进行了一个较系统的总结。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/agent%E7%A0%94%E7%A9%B6%E6%80%BB%E7%BB%93.png)
 
 ## 3.论文提出观点
 
@@ -22,7 +22,7 @@ GitHub：https://github.com/Paitesanshi/LLM-Agent-Survey
 
 ① 代理架构构建：文章提出一个统一架构总结目前开发的一些模块，主要由Profile模块、Memory模块、Planning模块和Action模块组成。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E4%BB%A3%E7%90%86%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%9D%97.png)
 
 Profile模块：假定代理的角色，交代对应问题背景。
 
@@ -54,11 +54,11 @@ Action模块：受上面三个模块的指导，直接与外界进行交互。�
 
 (2) 无微调方法：基于提示工程和机制工程（例如加入试错，众包，经验积累等机制），适用于开源和闭源LLM。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E4%BB%A3%E7%90%86%E8%83%BD%E5%8A%9B%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95.png)
 
 2.代理应用：在社会科学，自然科学，工程方面的应用。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E4%BB%A3%E7%90%86%E5%90%84%E6%96%B9%E9%9D%A2%E5%BA%94%E7%94%A8.png)
 
 3.代理评估：评估LLM自主代理的有效性，分为主观评估和客观评估。
 
