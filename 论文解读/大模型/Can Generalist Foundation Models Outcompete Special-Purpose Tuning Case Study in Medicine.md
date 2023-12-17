@@ -10,7 +10,7 @@
 
 作者认为在没有额外微调和专家策划的情况下，仅凭提示工程，GPT-4 就能达到专家效果。使用他们提出的最新提示策略Medprompt，在医疗专业领域，GPT-4在MultiMed QA 九个测试集中取得最优结果。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MedPrompt_SOTA.png)
 
 ## 3.论文方法
 
@@ -28,8 +28,8 @@
 
 GPT-4 使用以下提示模版为训练示例生成思维链：
 
-![]()
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Self-generate%20CoT%20tem.png)
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/CoT%20and%20SG%20CoT.png)
 
 3.选项洗牌集成（Choice Shuffling Ensemble）
 
@@ -41,7 +41,7 @@ GPT-4 使用以下提示模版为训练示例生成思维链：
 
 包括两个阶段：预处理阶段和推理步骤，在推理步骤中对测试用例进行最终预测。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MedPrompt%20%E7%AE%97%E6%B3%95.png)
 
 ## 4.实验分析
 
@@ -49,12 +49,12 @@ GPT-4 使用以下提示模版为训练示例生成思维链：
 
 作者在 MedQA 数据集上进行了消融实验，下图是 Medprompt 组件的直观图解以及对 MedQA 基准性能贡献。
 
-![]()
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MedPrompt%E5%9B%BE%E8%A7%A3.png)
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MedPrompt%E8%A1%A8%E7%8E%B0.png)
 
 2.Medprompt的跨域泛化能力
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MedPrompt%E8%B7%A8%E5%9F%9F%E6%B3%9B%E5%8C%96.png)
 
 ## 5.其它
 
