@@ -16,7 +16,7 @@ Github：https://github.com/microsoft/autogen
 
 论文提出一种AutoGen框架，AutoGen框架的核心是其代理协同工作的能力。每个代理都有其特定的能力和角色，你需要定义代理之间的互动行为，即当一个代理从另一个代理收到消息时该如何回复。这种方式不仅仅是在定义代理和角色，还在定义它们如何协同工作，从而实现更优的任务完成效果。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/AutoGen%E6%A1%86%E6%9E%B6.png)
 
 有一个泛型ConversableAgent类，有两个核心的内置的子类，**AssistantAgent** 和 **UserProxyAgent**。AssistantAgent 设计为充当 AI 助手，默认使用 LLM（可以是GPT，也可是其他），可以编写 Python 代码给到UserProxyAgent 。
 
@@ -28,11 +28,11 @@ GroupChatManager支持更复杂的动态组聊天，它可以动态选择下一�
 
 ## 4.实验分析
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E5%85%AD%E7%A7%8DAutoGen%E6%A1%86%E6%9E%B6%E7%9A%84%E5%BA%94%E7%94%A8.png)
 
 几个应用问题：数学问题求解，检索增强代码生成和问答，文本世界环境中的决策制定，多agent编码，动态群组聊天，国际象棋对话。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/AutoGen%E5%AE%9E%E9%AA%8C.png)
 
 ## 5.论文总结
 
