@@ -12,7 +12,7 @@ github：https://github.com/xinyuanwangcs/promptagent
 
 作者比较了一些启发式的 Prompt 生成方法：比如蒙特卡洛搜索、Gibbs采样，发现这些方法忽略了 Prompt 的本质是通过多次人机交互来修改校验的过程。基于此作者提出模拟人机交互的过程，利用大模型的反思能力，不断试错迭代从而生成更专业的 Prompt。PromptAgent这个新的优化方法，可以自动地生成与专家手工制作同等质量的 Prompt。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/expert_prompt.png)
 
 ## 3.论文方法
 
@@ -32,17 +32,17 @@ github：https://github.com/xinyuanwangcs/promptagent
 
 基于蒙特卡洛树搜索（MCTS）逐步构建树状结构来实现策略搜索，每个节点表示一个状态，每个边表示一个动作。算法通过四个操作：选择、扩展、模拟和反向传播，来更新状态-动作的价值函数，并扩展树结构。迭代过程在达到预定义的迭代次数后结束，从所有路径中挑选一条最优的路径和节点（Prompt）作为最终结果。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/MCTS_PromptAgent.png)
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/example_PromptAgent.png)
 
 ## 4.实验分析
 
 作者在三个不同领域的12个任务进行实验： 6个BIG-Bench Hard (BBH)任务，3个生物医学领域特定任务，3个自然语言理解任务。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/BBH_result.png)
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/NLU_result.png)
 
 泛化性：作者在GPT-3.5, GPT-4， PaLM2 上进行实验发现指标都有较大的提升。
 
