@@ -12,7 +12,7 @@ GitHub：https://github.com/wang-research-lab/agentinstruct
 
 论文提出一种利用零样本Agent生成指令来指导推理的方法。首先使用一个Agent根据简单的任务信息和几个输入样例生成完成任务的说明（一系列instructions），再将instructions给到LLM进行后续的推理任务并输出结果。
 
-![]([LLMsStudy/论文解读/pic/Zero-shot Agent instructions.png at master · zzysos/LLMsStudy (github.com)](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Zero-shot Agent instructions.png))
+![](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Zero-shot Agent instructions.png)
 
 ## 3.论文方法
 
@@ -20,7 +20,7 @@ GitHub：https://github.com/wang-research-lab/agentinstruct
 
 finish[instructions]：基于前面的观察与思考得到最终的instructions。
 
-![]([LLMsStudy/论文解读/pic/Agent Instructions生成过程.png at master · zzysos/LLMsStudy (github.com)](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Agent Instructions生成过程.png))
+![](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Agent Instructions生成过程.png)
 
 **Chain of Thought Reasoning**：利用上面Agent生成的多步骤的instructions进行一步步的推理最后得到结果。
 
