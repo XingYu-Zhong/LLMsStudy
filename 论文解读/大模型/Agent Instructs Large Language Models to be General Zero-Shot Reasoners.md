@@ -20,7 +20,7 @@ GitHub：https://github.com/wang-research-lab/agentinstruct
 
 finish[instructions]：基于前面的观察与思考得到最终的instructions。
 
-![](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Agent Instructions生成过程.png)
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Agent%20Instructions%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png)
 
 **Chain of Thought Reasoning**：利用上面Agent生成的多步骤的instructions进行一步步的推理最后得到结果。
 
@@ -28,19 +28,19 @@ finish[instructions]：基于前面的观察与思考得到最终的instructions
 
 实验用到HELM（Holistic Evaluation of Language Models）中的多个任务数据集，作者将这些任务分为生成，分类，推理三类，并与Zero-shot，Zero-shot CoT进行对比。
 
-![]()     ![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/HELM%E4%BB%BB%E5%8A%A1%E5%88%86%E7%B1%BB.png)     ![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Winning%20rate%20(%25)%20between%20zeroshot%2C%20zero-shot%20CoT%2C%20and%20zero-shot%20AgentInstruct.png)
 
 在不同模型上进行实验对比。
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E5%A4%9A%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94.png)
 
 消融实验：
 
-![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E6%B6%88%E8%9E%8D%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C.png)
 
 与few-shot方法和Self-Consistency方法进行比较：
 
-![]()     ![]()
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E4%B8%8Efew-shot%E5%AF%B9%E6%AF%94.png)     ![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/%E4%B8%8ESC%E5%AF%B9%E6%AF%94.png)
 
 ## 5.论文总结
 
