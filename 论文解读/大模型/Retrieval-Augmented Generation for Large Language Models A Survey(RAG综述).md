@@ -17,7 +17,7 @@
 
 总结 RAG 的三个主要组成部分：检索器、生成器和增强方法，并着重介绍了从各个角度优化 RAG 在大模型中的表现，实现通过知识检索增强大型语言模型的生成。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%E6%97%B6%E9%97%B4%E7%BA%BF.png)
 
 ## 3.论文思路
 
@@ -41,8 +41,8 @@ RAG，检索增强，就是本文叙述的方法
 
 应该根据不同应用场景决定采用何种方法
 
-![]()
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%20vs%20%E5%85%B6%E4%BB%96.png)
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%20vs%20%E5%BE%AE%E8%B0%83.png)
 
 # RAG 几种范式
 
@@ -52,13 +52,13 @@ RAG，检索增强，就是本文叙述的方法
 
 模块化 RAG（Modular RAG）：模块化方法允许根据具体问题调整模块和流程，利用大模型自身的"反思"能力等，构建起 RAG 新的范式。上面两种方法都是单一的流水线模式，检索结束之后交给模型，然后模型输出结果。但是在论文中的 Modular RAG 方法中，递归的调用了 LLM 的能力，例如利用模型来反思、评估第一次输出，然后再输出新的结果。或者是自适应 RAG，让模型自己决定什么时候调用检索工具。这其实有点像实现一个 RAG Agent。论文表示这种模块化的 RAG 范式正逐渐成为 RAG 领域的趋势。
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%20Framework.png)
 
 # 增强 RAG 效果的方法
 
 论文从检索器，生成器，增强方法等角度描述如何获得更好的效果
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%20Components.png)
 
 # RAG 评估方法
 
