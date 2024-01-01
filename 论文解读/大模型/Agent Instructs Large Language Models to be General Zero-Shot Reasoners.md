@@ -12,7 +12,7 @@ GitHub：https://github.com/wang-research-lab/agentinstruct
 
 论文提出一种利用零样本Agent生成指令来指导推理的方法。首先使用一个Agent根据简单的任务信息和几个输入样例生成完成任务的说明（一系列instructions），再将instructions给到LLM进行后续的推理任务并输出结果。
 
-![](https://github.com/zzysos/LLMsStudy/blob/master/论文解读/pic/Zero-shot Agent instructions.png)
+![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Zero-shot%20Agent%20instructions.png)
 
 ## 3.论文方法
 
