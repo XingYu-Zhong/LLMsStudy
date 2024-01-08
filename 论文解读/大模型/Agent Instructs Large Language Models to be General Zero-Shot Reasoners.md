@@ -10,7 +10,9 @@ GitHub：https://github.com/wang-research-lab/agentinstruct
 
 ##  2.论文提出观点
 
-论文提出一种利用零样本Agent生成指令来指导推理的方法。首先使用一个Agent根据简单的任务信息和几个输入样例生成完成任务的说明（一系列instructions），再将instructions给到LLM进行后续的推理任务并输出结果。
+论文提出一种利用零样本Agent生成指令来指导推理的方法。首先使用一个Agent根据简单的任务信息和几个输入样例生成完成任务的说明（一系列instructions），再将instructions给到LLM（task executor）进行后续的推理任务并输出结果。
+
+论文中Agent使用的默认是GPT-4，task executor默认是GPT-3.5。
 
 ![](https://github.com/zzysos/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Zero-shot%20Agent%20instructions.png)
 
@@ -48,4 +50,10 @@ finish[instructions]：基于前面的观察与思考得到最终的instructions
 
 ## 6.可能改进的点
 
-将Reflexion模块加入本论文的方法中，可以根据任务执行时出错的样例总结出经验，从而及时改善旧的instructions以其更适用于当前任务数据。
+将反思机制加入本论文的方法中，根据任务执行时出错的样例得出概括性的经验总结，存储在一个反思队列中，在下次任务执行时task executor将这些经验加入自己的上下文中进行参考，从而更好的执行任务。
+
+实验：在论文用到的其中一个任务集BoolQ上进行了一些实验。BoolQ的任务是给出一段文章，然后给出一句话，然后需要根据文章内容判断这句话正确还是错误，输出是True/False。
+
+论文方法：（50个样例）成功率：0.74  0.76  0.74    平均：0.746                     （200个样例）成功率：0.825 0.84 0.84   平均：0.835
+
+加入反思机制：（50个样例）成功率：0.76  0.84  0.82     平均：0.806             （200个样例）成功率：0.855 0.85 0.885   平均：0.863
