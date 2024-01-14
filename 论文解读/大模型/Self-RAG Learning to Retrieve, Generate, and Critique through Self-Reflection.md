@@ -18,7 +18,7 @@
 
 1.RAG vs Self-RAG
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/RAG%20vs%20Self-RAG.png)
 
 对比 RAG，Self-RAG 框架的不同之处就是：在生成过程中利用特殊的 token 达到更精细的控制——要不要检索、检索内容相关性怎样、利用检索内容生成的质量怎样。达到这些目的，就会让 RAG+LLM 生成的内容在质量、事实性、验证性上得到提升。
 
@@ -26,11 +26,11 @@
 
 以下是 Self-RAG 框架中使用的四种反思 tokens 的类型：
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Self-RAG%20tokens.png)
 
 以下是推理算法的伪代码，其中涉及三个主要组件：生成器语言模型（LM）、检索器（R）、以及大型文本段落集合（D）
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Self_RAG%20%E7%AE%97%E6%B3%95.png)
 
 对于每一个 x 和前序生成结果 y_n (n < t)，模型都会解码一个检索标记，以评估检索的效用。如果不需要检索，模型就会像标准 LM 一样预测下一个输出段落。如果需要检索，模型就会生成一个评论标记，用于评估检索段落的相关性，然后生成下一个回复段落以及一个评论标记，用于评估回应段中的信息是否得到段落的支持。
 
@@ -57,13 +57,13 @@ Self-RAG 的训练包括三个模型：检索器（Retriever）、评论家（Cr
 
 1.实验结果
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Self_RAG%20%E7%BB%93%E6%9E%9C.png)
 
 Self-RAG在六项任务中均超越了原始的 ChatGPT 或 LLama2-chat，并且在大多数任务中，其表现远超那些广泛应用的检索增强方法。
 
 2.消融实验
 
-![]()
+![](https://github.com/Kayin211/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/pic/Self_RAG%20%E6%B6%88%E8%9E%8D.png)
 
 每一个组件和技术在Self-RAG中都起到了至关重要的作用。调整这些组件可以显著影响模型的输出性质和质量，这证明了它们在模型中的重要性。
 
