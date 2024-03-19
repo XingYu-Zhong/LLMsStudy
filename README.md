@@ -44,6 +44,7 @@ https://github.com/Hannibal046/Awesome-LLM
 
 |    主题     |                             题目                             | 推荐  |
 | :---------: | :----------------------------------------------------------: | :---: |
+|   大模型    | [WizardLM: Empowering Large Language Models to Follow Complex Instructions](https://github.com/XingYu-Zhong/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/%E5%A4%A7%E6%A8%A1%E5%9E%8B/WizardLM%20Empowering%20Large%20Language%20Models%20to%20Follow%20Complex%20Instructions.md) | ★★★★★★★ |
 |   大模型    | [Igniting Language Intelligence The Hitchhiker's Guide From Chain-of-Thought Reasoning to Language Agents](https://github.com/XingYu-Zhong/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/%E5%A4%A7%E6%A8%A1%E5%9E%8B/Igniting%20Language%20Intelligence%20The%20Hitchhiker's%20Guide%20From%20Chain-of-Thought%20Reasoning%20to%20Language%20Agents.md) | ★★★★★ |
 |   大模型    | [Reasoning with Language Model is Planning with World Model](https://github.com/XingYu-Zhong/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/%E5%A4%A7%E6%A8%A1%E5%9E%8B/Reasoning%20with%20Language%20Model%20is%20Planning%20with%20World%20Model.md) | ★★★★  |
 |   大模型    | [Reflexion Language Agents with Verbal Reinforcement Learning](https://github.com/XingYu-Zhong/LLMsStudy/blob/master/%E8%AE%BA%E6%96%87%E8%A7%A3%E8%AF%BB/%E5%A4%A7%E6%A8%A1%E5%9E%8B/Reflexion%20Language%20Agents%20with%20Verbal%20Reinforcement%20Learning.md) | ★★★★  |
